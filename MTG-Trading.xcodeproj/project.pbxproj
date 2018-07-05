@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1080D4920ED9742000FF214 /* CardTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1080D4820ED9742000FF214 /* CardTradeViewController.swift */; };
+		C1080D4D20ED9BDE000FF214 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1080D4C20ED9BDE000FF214 /* CardTableViewCell.swift */; };
 		C1832845208551510097EADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1832844208551510097EADC /* AppDelegate.swift */; };
-		C1832847208551510097EADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1832846208551510097EADC /* ViewController.swift */; };
+		C1832847208551510097EADC /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1832846208551510097EADC /* CardTableViewController.swift */; };
 		C183284A208551510097EADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1832848208551510097EADC /* Main.storyboard */; };
 		C183284C208551510097EADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C183284B208551510097EADC /* Assets.xcassets */; };
 		C183284F208551510097EADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C183284D208551510097EADC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1080D4820ED9742000FF214 /* CardTradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTradeViewController.swift; sourceTree = "<group>"; };
+		C1080D4C20ED9BDE000FF214 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		C1832841208551500097EADC /* MTG-Trading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTG-Trading.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1832844208551510097EADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1832846208551510097EADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1832846208551510097EADC /* CardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
 		C1832849208551510097EADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C183284B208551510097EADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C183284E208551510097EADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				C1832844208551510097EADC /* AppDelegate.swift */,
-				C1832846208551510097EADC /* ViewController.swift */,
+				C1832846208551510097EADC /* CardTableViewController.swift */,
+				C1080D4820ED9742000FF214 /* CardTradeViewController.swift */,
+				C1080D4C20ED9BDE000FF214 /* CardTableViewCell.swift */,
 				C1832848208551510097EADC /* Main.storyboard */,
 				C183284B208551510097EADC /* Assets.xcassets */,
 				C183284D208551510097EADC /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1832847208551510097EADC /* ViewController.swift in Sources */,
+				C1080D4920ED9742000FF214 /* CardTradeViewController.swift in Sources */,
+				C1832847208551510097EADC /* CardTableViewController.swift in Sources */,
 				C1832845208551510097EADC /* AppDelegate.swift in Sources */,
+				C1080D4D20ED9BDE000FF214 /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 				C1832855208551510097EADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

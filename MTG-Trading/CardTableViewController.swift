@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CardTableViewController: UIViewController {
 
+    @IBOutlet var cardNameText: UITextField!
+    @IBOutlet var cardTable: UITableView!
+    @IBOutlet var cardCell: CardTableViewCell!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
