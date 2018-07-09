@@ -14,6 +14,8 @@
 		C183284A208551510097EADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1832848208551510097EADC /* Main.storyboard */; };
 		C183284C208551510097EADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C183284B208551510097EADC /* Assets.xcassets */; };
 		C183284F208551510097EADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C183284D208551510097EADC /* LaunchScreen.storyboard */; };
+		C1ADED7620F16B6C0039E6A7 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADED7520F16B6C0039E6A7 /* CardViewController.swift */; };
+		C1ADED7820F171470039E6A7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADED7720F171470039E6A7 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C183284B208551510097EADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C183284E208551510097EADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1832850208551510097EADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1ADED7520F16B6C0039E6A7 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		C1ADED7720F171470039E6A7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				C1832846208551510097EADC /* CardTableViewController.swift */,
 				C1080D4820ED9742000FF214 /* CardTradeViewController.swift */,
 				C1080D4C20ED9BDE000FF214 /* CardTableViewCell.swift */,
+				C1ADED7520F16B6C0039E6A7 /* CardViewController.swift */,
+				C1ADED7720F171470039E6A7 /* Card.swift */,
 				C1832848208551510097EADC /* Main.storyboard */,
 				C183284B208551510097EADC /* Assets.xcassets */,
 				C183284D208551510097EADC /* LaunchScreen.storyboard */,
@@ -144,8 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1080D4920ED9742000FF214 /* CardTradeViewController.swift in Sources */,
+				C1ADED7820F171470039E6A7 /* Card.swift in Sources */,
 				C1832847208551510097EADC /* CardTableViewController.swift in Sources */,
 				C1832845208551510097EADC /* AppDelegate.swift in Sources */,
+				C1ADED7620F16B6C0039E6A7 /* CardViewController.swift in Sources */,
 				C1080D4D20ED9BDE000FF214 /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

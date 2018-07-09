@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pIX-tJ-Lqa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J6Z-uC-pfg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -132,6 +132,72 @@
             </objects>
             <point key="canvasLocation" x="2584.8000000000002" y="6.746626686656672"/>
         </scene>
+        <!--Card View Controller-->
+        <scene sceneID="tNi-Fb-rTY">
+            <objects>
+                <viewController id="nZc-Lf-pKp" customClass="CardViewController" customModule="MTG_Trading" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vp8-0i-5Vz"/>
+                        <viewControllerLayoutGuide type="bottom" id="QMn-Pt-cY9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gI8-Z9-kbB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="TFt-wS-Ot4">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="imn-hg-96a">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="359"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z0-ZH-IFh">
+                                        <rect key="frame" x="0.0" y="359" width="343" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CMC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDD-fA-dFZ">
+                                        <rect key="frame" x="0.0" y="420" width="343" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Types" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DV5-gf-LVm">
+                                        <rect key="frame" x="0.0" y="481" width="343" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJv-wx-Qc8">
+                                        <rect key="frame" x="0.0" y="542" width="343" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TFt-wS-Ot4" firstAttribute="leading" secondItem="gI8-Z9-kbB" secondAttribute="leadingMargin" id="4eI-cg-Vdx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TFt-wS-Ot4" secondAttribute="trailing" id="KvC-Un-GdL"/>
+                            <constraint firstItem="TFt-wS-Ot4" firstAttribute="top" secondItem="vp8-0i-5Vz" secondAttribute="bottom" id="gqN-vK-J8v"/>
+                            <constraint firstItem="QMn-Pt-cY9" firstAttribute="top" secondItem="TFt-wS-Ot4" secondAttribute="bottom" id="uSQ-D5-gf4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gab-a0-RJg"/>
+                    <connections>
+                        <outlet property="cardCMC" destination="qDD-fA-dFZ" id="Ifo-PY-K4h"/>
+                        <outlet property="cardImage" destination="imn-hg-96a" id="fng-0M-Kmj"/>
+                        <outlet property="cardName" destination="7Z0-ZH-IFh" id="xwV-wf-67M"/>
+                        <outlet property="cardText" destination="LJv-wx-Qc8" id="sPA-EX-zRS"/>
+                        <outlet property="cardTypes" destination="DV5-gf-LVm" id="Sgp-y8-L09"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxq-bf-uEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535" y="-661"/>
+        </scene>
         <!--story-->
         <scene sceneID="CVH-D8-iDj">
             <objects>
@@ -222,7 +288,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Zx-iN-6oF"/>
                     <connections>
-                        <outlet property="cardCell" destination="xRu-qv-Zc6" id="V5g-hZ-Y66"/>
                         <outlet property="cardNameText" destination="QtG-tk-tu2" id="9AB-wg-pLU"/>
                         <outlet property="cardTable" destination="RO0-HM-xuA" id="0R5-lQ-jLZ"/>
                     </connections>
@@ -248,6 +313,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6A-DG-9cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="596" y="6.746626686656672"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KR6-B6-pD2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J6Z-uC-pfg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zEe-Y2-vSu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nZc-Lf-pKp" kind="relationship" relationship="rootViewController" id="bcc-hp-0h0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbb-Z5-UB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="-661"/>
         </scene>
     </scenes>
 </document>
